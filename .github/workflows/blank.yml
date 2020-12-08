@@ -49,7 +49,7 @@ jobs:
         wget 'https://storage.googleapis.com/git-repo-downloads/repo' -P ~/bin
         chmod +x ~/bin/repo
         git config --global user.name "UBports Sony Rhine CI"
-        git config --global user.email "thisemaildoesnotexist@exist.com"
+        git config --global user.email "a.a.c@live.com.pt"
     - name: Downloading source code
       run: |
         source halium.env
