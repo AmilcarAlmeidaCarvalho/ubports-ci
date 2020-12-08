@@ -46,8 +46,8 @@ jobs:
           /etc/mysql \
           /etc/php
         mkdir -p ~/bin
-        wget 'https://gerrit.googlesource.com/git-repo' -P ~/bin
-        chmod +x ~/bin/repo
+        wget 'https://storage.googleapis.com/git-repo-downloads/repo' -P ~/bin
+        chmod a+rx ~/bin/repo
         git config --global user.name "UBports Sony Rhine CI"
         git config --global user.email "a.a.c@live.com.pt"
     - name: Downloading source code
