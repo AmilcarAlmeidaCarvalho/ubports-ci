@@ -18,7 +18,7 @@ on:
 jobs:
 
   build:
-    runs-on: ubuntu-16.04
+    runs-on: Ubuntu-latest
 
     env:
       VENDOR: sony
@@ -40,7 +40,7 @@ jobs:
         libncurses5-dev libsdl1.2-dev libssl-dev libwxgtk3.0-dev \
         libxml2 libxml2-utils lzop pngcrush rsync schedtool \
         squashfs-tools xsltproc yasm zip zlib1g-dev git \
-        python-minimal
+        python2-minimal
         sudo docker rmi `docker images -q`
         sudo rm -rf \
           /usr/share/dotnet \
